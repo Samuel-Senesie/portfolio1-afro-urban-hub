@@ -44,4 +44,17 @@ header{
 .second-navbar{
     width: 100%;
     background-color: darkseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+.logo {
+    border-radius: 50%;
+    display: flex;
+    margin: 5px;
 }
