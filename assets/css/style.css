@@ -10,9 +10,11 @@
 
 /*General body styles*/
 body {
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* Generic project property */
+    color: #3a3a3a;
 }
 /* Header */
 header{
@@ -57,4 +59,16 @@ header{
     border-radius: 50%;
     display: flex;
     margin: 5px;
+}
+
+/* Main Section */
+main{
+    background-color: aliceblue;
+    /*Make main element take surplus space and push footer to page bottom*/
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(8, 43, 29, 0.7);
 }
