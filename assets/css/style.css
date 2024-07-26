@@ -39,3 +39,9 @@ header{
     display: flex;
     gap: 3em;
 }
+
+/* Bottom navbar */
+.second-navbar{
+    width: 100%;
+    background-color: darkseagreen;
+}
