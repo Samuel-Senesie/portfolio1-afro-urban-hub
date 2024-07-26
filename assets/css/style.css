@@ -14,3 +14,28 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Header */
+header{
+    width: 100%;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgba(8, 43, 29, 0.7);
+    height: 40px;
+}
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+.top-bar a {
+    color: #fff;
+    font-size: 1em;
+}
+.top-right {
+    display: flex;
+    gap: 3em;
+}
