@@ -78,11 +78,13 @@ header a {
 .second-navbar{
     background-color: darkseagreen;
     display: flex;
+    /* padding: 0 1em; */
 }
 .menu-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: baseline; */
+    width: 100%;
 }
 
 /*.second-navbar .container {
@@ -114,10 +116,11 @@ header a {
     letter-spacing: 2px;
     margin: 0;
 }
-.menu-div{
+/* .menu-div{
     display: flex;
     margin-left: 5px;
-}
+    align-items: baseline;
+} */
 .menu {
     font-size: 110%;
     letter-spacing: 2px;
@@ -190,4 +193,18 @@ main{
 /* Footer */
 footer{
     background-color: rgba(8, 43, 29, 0.7);
+}
+
+/* Media query for tablets and larger screens (>= 760px) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    /*Topbar */
+    .top-bar{
+        display: flex;
+    }
+
+    /*.menu-div {
+        display: block;
+    }*/
+    
 }
