@@ -65,6 +65,8 @@ header a {
 
 .social-media-icons {
     margin-left: 1em;
+    gap: 2px;
+    display: flex;
 }
 
 .top-bar a {
@@ -98,13 +100,27 @@ header a {
 .logo img {
     height: 50px;
     width: 50px;
-    margin-right: 10px;
+    margin: 5px;
 }
 
 .logo-title {
+    font-family: 'Oswald' , sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
+}
+.menu-div{
+    display: flex;
+    margin-left: 5px;
+}
+.menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-bottom: 1em;
 }
 
 /*.menu {
