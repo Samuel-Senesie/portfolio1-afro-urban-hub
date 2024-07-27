@@ -20,7 +20,7 @@ body {
 header{
     width: 100%;
     position: fixed;
-    padding: 0 0.5rem;
+    padding: 0;
     z-index: 99;
     box-shadow: 0 2px 2px #3a3a3a;
 }
@@ -28,69 +28,125 @@ header a {
     text-decoration: none;
     color: #fff;
 }
+
+/*nav {
+    width: 100%;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+}*/
+
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+} */
+
 .top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5em;
     background-color: rgba(8, 43, 29, 0.7);
     height: 40px;
+    font-size: small;
+    width: 100%;
 }
-.top-bar ul {
-    list-style: none;
+.top-left {
     display: flex;
-    gap: 1em;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
 }
+
+.social-media-icons {
+    margin-left: 1em;
+}
+
 .top-bar a {
     color: #fff;
     font-size: 1em;
 }
-.top-right {
-    display: flex;
-    gap: 3em;
-}
 
 /* Bottom navbar */
 .second-navbar{
-    width: 100%;
     background-color: darkseagreen;
     display: flex;
-    align-items: center;
+}
+
+/*.second-navbar .container {
+    display: flex;
     justify-content: space-between;
-}
-
-h1 {
-    font-family: 'Oswald' , sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
-}
-
-#menu {
-    list-style-type: none;
-    letter-spacing: 2px;
-    font-size: 110%;
-}
-#menu > li{
-    margin-bottom: 1em;
-
-}
-.active {
-    border-bottom: 1px solid;
-}
+    align-items: center;
+} */
 
 .logo {
     border-radius: 50%;
     display: flex;
-    margin: 5px;
-    width: 50px;
+    align-items: center;
+    flex: 1;
 }
+
+.logo a {
+    display: flex;
+    align-items: center; /* align logo and text */
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/*.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+} */
+
+/*.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+} */
+
+/* .menu-div ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-div li{
+    margin-left: 20px;
+} */
+/*.active {
+    border-bottom: 1px solid #fff;
+}*/
+/* Navbar stles with dropdown toggle */
+/* .menu-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+} */
+/*#nav-toggle:checked~nav {
+    display: block;
+} */
 
 /* Main Section */
 main{
     background-color: aliceblue;
     /*Make main element take surplus space and push footer to page bottom*/
     flex: 1 0 auto;
+    margin-top: 120px;
 }
 
 /* Footer */
