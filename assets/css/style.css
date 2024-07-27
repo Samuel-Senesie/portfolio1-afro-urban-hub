@@ -79,6 +79,11 @@ header a {
     background-color: darkseagreen;
     display: flex;
 }
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*.second-navbar .container {
     display: flex;
@@ -123,16 +128,33 @@ header a {
     margin-bottom: 1em;
 }
 
-/*.menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-} */
+.active {
+    border-bottom: 1px solid #fff;
+}
 
-/*.menu li {
-    padding: 15px 10px;
-    font-size: 16px;
-} */
+/* Navbar stles with dropdown toggle */
+.menu-div{
+    position: absolute;
+    background-color: darkseagreen;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+/* Nav toggle */
+#nav-toggle:checked~div{
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 
 /* .menu-div ul {
     list-style-type: none;
@@ -162,7 +184,7 @@ main{
     background-color: aliceblue;
     /*Make main element take surplus space and push footer to page bottom*/
     flex: 1 0 auto;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 /* Footer */
