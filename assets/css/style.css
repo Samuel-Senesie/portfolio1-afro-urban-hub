@@ -121,13 +121,13 @@ header a {
     margin-left: 5px;
     align-items: baseline;
 } */
-.menu {
+#menu {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
 }
 
-.menu li {
+#menu li {
     margin-bottom: 1em;
 }
 
@@ -201,10 +201,41 @@ footer{
     /*Topbar */
     .top-bar{
         display: flex;
+        font-size: 150%;
+    }
+    .top-left{
+        gap: 70px;
+    }
+    .social-media-icons{
+        gap: 20px;
     }
 
-    /*.menu-div {
+    /* Second navbar */
+
+    /* .menu-div {
         display: block;
-    }*/
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding: 1rem;
+        align-items: center;
+    } */
+
+    /*#menu {
+        display: flex;
+    }
+    #menu li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .logo {
+        font-size: 120%;
+        line-height: 75px;
+
+    } */
     
 }
