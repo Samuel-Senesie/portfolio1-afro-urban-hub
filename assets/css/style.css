@@ -190,9 +190,7 @@ main{
 }
 
 /* Footer */
-footer{
-    padding-top: 10px;
-}
+
 /*.footer-container {
     width: 100%;
     margin: auto;
@@ -234,7 +232,7 @@ h3 {
  .quick-links{
     background-color:  rgba(8, 43, 29, 0.7);
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
  }
  #quick-link-list {
     display: flex;
@@ -251,6 +249,7 @@ h3 {
 
  .follow-us {
     background-color: darkseagreen;
+    padding-top: 10px;
  }
 
 #footer-social-icons{
@@ -265,6 +264,19 @@ h3 {
     font-size: 180%;
     color: #fff;
     padding: 5%;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    background-color: #095403;
+    bottom: 90px;
+    right: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    line-height: 40px;
 }
 
 
