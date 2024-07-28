@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Oswald:wght@200..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 /* Apply Asterisk wildcard selector to override default style added by browser*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,14 +16,16 @@ body {
     /* Generic project property */
     color: #3a3a3a;
 }
+
 /* Header */
-header{
+header {
     width: 100%;
     position: fixed;
     padding: 0;
     z-index: 99;
     box-shadow: 0 2px 2px #3a3a3a;
 }
+
 header a {
     text-decoration: none;
     color: #fff;
@@ -56,6 +58,7 @@ header a {
     font-size: small;
     width: 100%;
 }
+
 .top-left {
     display: flex;
     align-items: center;
@@ -75,10 +78,11 @@ header a {
 }
 
 /* Bottom navbar */
-.second-navbar{
+.second-navbar {
     background-color: darkseagreen;
     /* padding: 0 1em; */
 }
+
 .menu-container {
     display: flex;
     justify-content: space-between;
@@ -101,8 +105,10 @@ header a {
 
 .logo a {
     display: flex;
-    align-items: center; /* align logo and text */
+    align-items: center;
+    /* align logo and text */
 }
+
 .logo img {
     height: 50px;
     width: 50px;
@@ -110,11 +116,12 @@ header a {
 }
 
 .logo-title {
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
 }
+
 /* .menu-div{
     display: flex;
     margin-left: 5px;
@@ -135,7 +142,7 @@ header a {
 }
 
 /* Navbar stles with dropdown toggle */
-.menu-div{
+.menu-div {
     position: absolute;
     background-color: darkseagreen;
     width: 100%;
@@ -145,8 +152,9 @@ header a {
     display: none;
     top: 100%;
 }
+
 /* Nav toggle */
-#nav-toggle:checked~div{
+#nav-toggle:checked~div {
     display: block;
 }
 
@@ -182,7 +190,7 @@ header a {
 } */
 
 /* Main Section */
-main{
+main {
     background-color: aliceblue;
     /*Make main element take surplus space and push footer to page bottom*/
     flex: 1 0 auto;
@@ -190,6 +198,15 @@ main{
 }
 
 /* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 0;
+    font-family: 'Oswald' , sans-serif;
+}
 
 /*.footer-container {
     width: 100%;
@@ -198,21 +215,23 @@ main{
     flex-direction: column;
     justify-content: center;
 }*/
-.footer-content{
+.footer-content {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     padding-top: 5px;
 }
+
 .contact {
     background-color: darkseagreen;
     padding: 10px;
 }
 
-.contact p{
+.contact p {
     color: #fff;
     font-size: 120%;
     letter-spacing: 1px;
 }
+
 .footer-content p {
     color: #fff;
 }
@@ -223,36 +242,39 @@ h3 {
     text-align: center;
     margin-bottom: 5px;
     text-decoration: underline;
+    padding-bottom: 5px;
 }
+
 /*.footer-content p {
     width: 250px;
     padding: 7px;
     margin: auto;
 } */
- .quick-links{
-    background-color:  rgba(8, 43, 29, 0.7);
+.quick-links {
+    background-color: rgba(8, 43, 29, 0.7);
     padding-top: 10px;
     padding-bottom: 15px;
- }
- #quick-link-list {
+}
+
+#quick-link-list {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     margin-bottom: 5px;
- }
+}
 
- #quick-link-list a {
-    text-decoration: double;
+#quick-link-list a {
+    text-decoration: underline;
     font-size: 10px%;
     color: #fff;
- }
+}
 
- .follow-us {
+.follow-us {
     background-color: darkseagreen;
     padding-top: 10px;
- }
+}
 
-#footer-social-icons{
+#footer-social-icons {
     text-align: center;
     display: flex;
     padding: 10px 0;
@@ -265,8 +287,38 @@ h3 {
     color: #fff;
     padding: 5%;
 }
+#quick-links a::before {
+    content: '';
+    position: absolute;
+    transform: (-50% -50%);
+    transition-duration: 0.9s; /*Chech */
+    background: aqua;
+    height: 2px;
+    left: 50%;
+    top: 106%;
+}
 
-.back-to-top{
+#quick-links li:hover { /*Check*/
+    color: aqua;
+}
+
+
+#footer-social-icons li::before{
+    content: '';
+    position: absolute;
+    transform: (-50% -50%);
+    transition-duration: 0.9s;
+    background: aqua;
+    height: 2px;
+    left: 50%;
+    top: 106%;
+}
+#footer-social-icons i:hover{
+    color: aqua;
+
+}
+
+.back-to-top {
     position: fixed;
     width: 35px;
     height: 35px;
@@ -296,30 +348,41 @@ h3 {
 
 /* Media query for tablets and larger screens (>= 760px) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     /*Topbar */
-    .top-bar{
+    .top-bar {
         display: flex;
         font-size: 150%;
     }
-    .top-left{
+
+    .top-left {
         gap: 70px;
     }
-    .social-media-icons{
+
+    .social-media-icons {
         gap: 20px;
     }
 
     /* Second navbar */
-    
 
-    #menu {
+    /* .menu-div {
+        position: static;
         display: flex;
-        gap: 20px;
+        align-items: center;
+        flex-direction: row;
     }
 
 
+    #menu {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
-
+    #menu>li {
+        margin: 0 1em;
+        margin-bottom: 0;
+    } */
 
 
     /*#menu {
@@ -337,6 +400,40 @@ h3 {
         font-size: 120%;
         line-height: 75px;
 
-    } 
-    
+    }
+
+    /* Footer */
+    .contact p{
+        font-size: 140%;
+    }
+
+    footer h3{
+        font-size: 200%;
+    }
+    .quick-links li{
+        font-size: 200%;
+    }
+    #footer-social-icons i{
+        font-size: 280%;
+    }
+
+    .back-to-top {
+        width: 60px;
+        height: 60px;
+        bottom: 75px;
+        right: 10px;
+        font-size: 50px;
+        line-height: 70px;
+
+    }
+
+    .bottom-bar p {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .bottom-bar  span {
+        gap: 20px;
+    }
+
 }
