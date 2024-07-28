@@ -31,38 +31,21 @@ header a {
     color: #fff;
 }
 
-/*nav {
-    width: 100%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-}*/
-
-
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-} */
-
+/*Top bar */
 .top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5em;
-    background-color: rgba(8, 43, 29, 0.7);
+    background-color: rgba(8, 43, 29, 0.7);     
     height: 40px;
     font-size: small;
     width: 100%;
-}
+} 
 
 .top-left {
     display: flex;
     align-items: center;
-    padding: 0px;
     gap: 15px;
 }
 
@@ -70,6 +53,7 @@ header a {
     margin-left: 1em;
     gap: 3px;
     display: flex;
+    gap: 3px;
 }
 
 .top-bar a {
@@ -80,27 +64,26 @@ header a {
 /* Bottom navbar */
 .second-navbar {
     background-color: darkseagreen;
-    /* padding: 0 1em; */
 }
-
-.menu-container {
-    display: flex;
-    justify-content: space-between;
-    /*align-items: baseline; */
-    width: 100%;
-}
-
-/*.second-navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .logo {
     border-radius: 50%;
     display: flex;
     align-items: center;
     flex: 1;
+}
+
+.logo-title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+} 
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo a {
@@ -115,18 +98,6 @@ header a {
     margin: 5px;
 }
 
-.logo-title {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0;
-}
-
-/* .menu-div{
-    display: flex;
-    margin-left: 5px;
-    align-items: baseline;
-} */
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
@@ -166,29 +137,6 @@ header a {
     font-size: 2rem;
 }
 
-/* .menu-div ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.menu-div li{
-    margin-left: 20px;
-} */
-/*.active {
-    border-bottom: 1px solid #fff;
-}*/
-/* Navbar stles with dropdown toggle */
-/* .menu-div {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-} */
-/*#nav-toggle:checked~nav {
-    display: block;
-} */
-
 /* Main Section */
 main {
     background-color: aliceblue;
@@ -208,13 +156,6 @@ footer {
     font-family: 'Oswald' , sans-serif;
 }
 
-/*.footer-container {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}*/
 .footer-content {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
@@ -245,11 +186,6 @@ h3 {
     padding-bottom: 5px;
 }
 
-/*.footer-content p {
-    width: 250px;
-    padding: 7px;
-    margin: auto;
-} */
 .quick-links {
     background-color: rgba(8, 43, 29, 0.7);
     padding-top: 10px;
@@ -302,7 +238,6 @@ h3 {
     color: aqua;
 }
 
-
 #footer-social-icons li::before{
     content: '';
     position: absolute;
@@ -315,7 +250,6 @@ h3 {
 }
 #footer-social-icons i:hover{
     color: aqua;
-
 }
 
 .back-to-top {
@@ -330,7 +264,6 @@ h3 {
     color: white;
     line-height: 40px;
 }
-
 
 /*Bottom bar*/
 .bottom-bar {
@@ -350,6 +283,7 @@ h3 {
 @media screen and (min-width: 768px) {
 
     /* Header */
+
     /*Topbar */
     .top-bar {
         display: flex;
@@ -365,41 +299,43 @@ h3 {
     }
 
     /* Second navbar */
+    .menu-div {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding: 1em;
+    }
 
-    /* .menu-div {
-        position: static;
+    .menu-container{
         display: flex;
         align-items: center;
-        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
 
+    .logo-title {
+        font-size: 200%;
+        line-height: 85px;
+    }
+    .logo img {
+        font-size: 150%;
+    }
 
     #menu {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    #menu>li {
-        margin: 0 1em;
-        margin-bottom: 0;
-    } */
-
-
-    /*#menu {
         display: flex;
+        list-style: none;
+        gap: 1em;
+        justify-content: flex-end;
+        font-size: 13px;
     }
-    #menu li {
-        padding-left: 1rem;
+
+    #menu > li {
+        padding: 3px;
     }
 
     .nav-toggle-label {
         display: none;
-    } */
-
-    .logo {
-        font-size: 120%;
-        line-height: 75px;
-
     }
 
     /* Footer */
