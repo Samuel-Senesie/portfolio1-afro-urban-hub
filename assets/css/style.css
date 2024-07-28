@@ -191,7 +191,6 @@ main{
 
 /* Footer */
 footer{
-    background-color: darkseagreen;
     padding-top: 10px;
 }
 /*.footer-container {
@@ -203,20 +202,56 @@ footer{
 }*/
 .footer-content{
     width: 100%;
-    box-shadow: #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
+    padding-top: 5px;
+}
+.contact {
+    background-color: darkseagreen;
+    padding: 10px;
+}
+
+.contact p{
+    color: #fff;
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+.footer-content p {
+    color: #fff;
 }
 
 h3 {
-    font-size: 25px;
-    color: #fff;
+    font-size: 20px;
+    color: #3a3a3a;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
+    text-decoration: underline;
 }
 /*.footer-content p {
     width: 250px;
     padding: 7px;
     margin: auto;
 } */
+ .quick-links{
+    background-color:  rgba(8, 43, 29, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ #quick-link-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-bottom: 5px;
+ }
+
+ #quick-link-list a {
+    text-decoration: double;
+    font-size: 10px%;
+    color: #fff;
+ }
+
+ .follow-us {
+    background-color: darkseagreen;
+ }
 
 #footer-social-icons{
     text-align: center;
@@ -230,11 +265,6 @@ h3 {
     font-size: 180%;
     color: #fff;
     padding: 5%;
-}
-
-.list li{
-    list-style: none;
-    text-align: center;
 }
 
 
