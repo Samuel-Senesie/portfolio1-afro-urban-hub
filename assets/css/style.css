@@ -344,9 +344,10 @@ h3 {
     }
 
     /* Footer */
-    .contact + .quick-links + .follow-us{
+    .contact+.quick-links+.follow-us {
         padding-top: 1px;
     }
+
     .contact p {
         font-size: 120%;
         padding-bottom: 2px;
@@ -393,51 +394,55 @@ h3 {
     }
 
 }
+
 /* Media query for taptops and larger screens like (>= 992px) */
 @media screen and (min-width: 992px) {
+
     /* Top bar */
-    footer h3 {
-        font-size: 30px;
-    }
-    .top-bar{
+    .top-bar {
         height: 70px;
         font-size: 200%;
     }
-    .social-media-icons{
+
+    .social-media-icons {
         font-size: 130%;
         gap: 20px;
     }
+
     /*Second Navbar */
-    .second-navbar{
+    .second-navbar {
         height: 120px;
     }
+
     #menu {
         font-size: 112%;
         padding-top: 15px;
     }
 
-    .logo-title{
+    .logo-title {
         font-size: 250%;
         letter-spacing: 3px;
         padding-left: 15px;
     }
-    .logo img{
+
+    .logo img {
         height: 95px;
         width: 95px;
         margin-left: 10px;
         margin-top: 10px;
     }
-    #menu a:hover{
+
+    #menu a:hover {
         border-bottom: 4px solid #fff;
     }
 
-      /* Main */
-      main {
-         /* Make main element take surplus spaces and push footer to page bottom */
-         flex: 1 0 auto;
-         margin-top: 190px;
-         font-size: 200%;
-      }
+    /* Main */
+    main {
+        /* Make main element take surplus spaces and push footer to page bottom */
+        flex: 1 0 auto;
+        margin-top: 190px;
+        font-size: 200%;
+    }
 
     /* Footer */
     .footer-container {
@@ -446,35 +451,41 @@ h3 {
         justify-content: center;
         width: 100%px;
     }
-    .footer-container > div {
+
+    .footer-container>div {
         width: 33.3%;
+    }
+
+    footer h3 {
+        font-size: 30px;
     }
 
     .contact {
         font-size: 120%;
         padding-top: 10px;
     }
+
     .contact p {
         padding-top: 25px;
     }
 
-    .quick-links{
+    .quick-links {
         display: block;
         font-size: 120%;
     }
 
-    #quick-link-list{
+    #quick-link-list {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    #footer-social-icons i{
+    #footer-social-icons i {
         padding-top: 60px;
     }
 
     /* Back to top button */
-    .back-to-top{
+    .back-to-top {
         bottom: 60px;
     }
 
@@ -483,10 +494,128 @@ h3 {
         height: 60px;
     }
 
-    .bottom-bar p{
+    .bottom-bar p {
         font-size: 150%;
     }
 
-    
+}
 
+/* Media query for desktops and larger screens (>= 1200px) */
+@media screen and (min-width: 1200px) {
+
+    /* Top bar */
+    .top-bar {
+        height: 40px;
+        font-size: 120%;
+    }
+
+    .social-media-icons {
+        font-size: 150%;
+        gap: 4em;
+        padding-right: 2em;
+    }
+
+    .top-left {
+        padding-left: 10em;
+        gap: 25em;
+    }
+
+    /*Second Navbar */
+    .second-navbar {
+        height: 110px;
+    }
+
+    #menu {
+        font-size: 112%;
+        padding-top: 15px;
+        padding-right: 3em;
+        gap: 3em;
+    }
+
+    .logo-title {
+        font-size: 300%;
+        letter-spacing: 3px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    .logo img {
+        height: 95px;
+        width: 95px;
+        margin-left: 2em;
+        margin-top: 5px;
+
+    }
+
+    #menu a:hover {
+        border-bottom: 4px solid #fff;
+    }
+
+    /* Main */
+    main {
+        /* Make main element take surplus spaces and push footer to page bottom */
+        flex: 1 0 auto;
+        margin-top: 150px;
+        font-size: 130%;
+    }
+
+    /* Footer */
+}
+
+.footer-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%px;
+    height: 140px;
+}
+
+.footer-container>div {
+    width: 33.3%;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+.contact {
+    font-size: 120%;
+    padding-top: 10px;
+}
+
+.contact p {
+    padding: 0px;
+    font-size: 15px;
+}
+
+.quick-links {
+    display: block;
+}
+
+#quick-link-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+#footer-social-icons i {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+/* Back to top button */
+.back-to-top {
+    bottom: 60px;
+}
+
+/* Bottom bar */
+.bottom-bar {
+    height: 40px;
+}
+
+.bottom-bar p {
+    font-size: 15px;
+}
 }
