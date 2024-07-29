@@ -37,11 +37,11 @@ header a {
     align-items: center;
     justify-content: space-between;
     padding: 0.5em;
-    background-color: rgba(8, 43, 29, 0.7);     
+    background-color: rgba(8, 43, 29, 0.7);
     height: 40px;
     font-size: small;
     width: 100%;
-} 
+}
 
 .top-left {
     display: flex;
@@ -78,7 +78,7 @@ header a {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
-} 
+}
 
 .menu-container {
     display: flex;
@@ -153,7 +153,7 @@ footer {
     left: 0;
     text-align: center;
     padding: 0;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .footer-content {
@@ -223,22 +223,25 @@ h3 {
     color: #fff;
     padding: 5%;
 }
+
 #quick-links a::before {
     content: '';
     position: absolute;
     transform: (-50% -50%);
-    transition-duration: 0.9s; /*Chech */
+    transition-duration: 0.9s;
+    /*Chech */
     background: aqua;
     height: 2px;
     left: 50%;
     top: 106%;
 }
 
-#quick-links li:hover { /*Check*/
+#quick-links li:hover {
+    /*Check*/
     color: aqua;
 }
 
-#footer-social-icons li::before{
+#footer-social-icons li::before {
     content: '';
     position: absolute;
     transform: (-50% -50%);
@@ -248,7 +251,8 @@ h3 {
     left: 50%;
     top: 106%;
 }
-#footer-social-icons i:hover{
+
+#footer-social-icons i:hover {
     color: aqua;
 }
 
@@ -307,7 +311,7 @@ h3 {
         padding: 1em;
     }
 
-    .menu-container{
+    .menu-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -318,6 +322,7 @@ h3 {
         font-size: 200%;
         line-height: 85px;
     }
+
     .logo img {
         font-size: 150%;
     }
@@ -330,7 +335,7 @@ h3 {
         font-size: 13px;
     }
 
-    #menu > li {
+    #menu>li {
         padding: 3px;
     }
 
@@ -339,18 +344,26 @@ h3 {
     }
 
     /* Footer */
-    .contact p{
+    .contact + .quick-links + .follow-us{
+        padding-top: 1px;
+    }
+    .contact p {
+        font-size: 120%;
+        padding-bottom: 2px;
+    }
+
+    footer h3 {
+        font-size: 20px%;
+    }
+
+    .quick-links li {
         font-size: 140%;
     }
 
-    footer h3{
-        font-size: 200%;
-    }
-    .quick-links li{
-        font-size: 200%;
-    }
-    #footer-social-icons i{
+
+    #footer-social-icons i {
         font-size: 280%;
+        padding-top: 0px;
     }
 
     .back-to-top {
@@ -360,7 +373,6 @@ h3 {
         right: 10px;
         font-size: 50px;
         line-height: 70px;
-
     }
 
     .bottom-bar p {
@@ -368,8 +380,113 @@ h3 {
         gap: 20px;
     }
 
-    .bottom-bar  span {
+    .bottom-bar span {
         gap: 20px;
     }
+
+    /* Main */
+    main {
+        /* Make main element take surplus spaces and push footer to page bottom */
+        flex: 1 0 auto;
+        margin-top: 130px;
+        font-size: 150%;
+    }
+
+}
+/* Media query for taptops and larger screens like (>= 992px) */
+@media screen and (min-width: 992px) {
+    /* Top bar */
+    footer h3 {
+        font-size: 30px;
+    }
+    .top-bar{
+        height: 70px;
+        font-size: 200%;
+    }
+    .social-media-icons{
+        font-size: 130%;
+        gap: 20px;
+    }
+    /*Second Navbar */
+    .second-navbar{
+        height: 120px;
+    }
+    #menu {
+        font-size: 112%;
+        padding-top: 15px;
+    }
+
+    .logo-title{
+        font-size: 250%;
+        letter-spacing: 3px;
+        padding-left: 15px;
+    }
+    .logo img{
+        height: 95px;
+        width: 95px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #menu a:hover{
+        border-bottom: 4px solid #fff;
+    }
+
+      /* Main */
+      main {
+         /* Make main element take surplus spaces and push footer to page bottom */
+         flex: 1 0 auto;
+         margin-top: 190px;
+         font-size: 200%;
+      }
+
+    /* Footer */
+    .footer-container {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 100%px;
+    }
+    .footer-container > div {
+        width: 33.3%;
+    }
+
+    .contact {
+        font-size: 120%;
+        padding-top: 10px;
+    }
+    .contact p {
+        padding-top: 25px;
+    }
+
+    .quick-links{
+        display: block;
+        font-size: 120%;
+    }
+
+    #quick-link-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #footer-social-icons i{
+        padding-top: 60px;
+    }
+
+    /* Back to top button */
+    .back-to-top{
+        bottom: 60px;
+    }
+
+    /* Bottom bar */
+    .bottom-bar {
+        height: 60px;
+    }
+
+    .bottom-bar p{
+        font-size: 150%;
+    }
+
+    
 
 }
