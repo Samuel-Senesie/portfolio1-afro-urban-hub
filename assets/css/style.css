@@ -139,15 +139,21 @@ header a {
 
 /* Main Section */
 main {
-    background-color: aliceblue;
     /*Make main element take surplus space and push footer to page bottom*/
     flex: 1 0 auto;
     margin-top: 100px;
 }
 
+/* City Photo */
+#city{
+    height: 800px;
+    width: 100%;
+    background: url("../images/Homepage.jpeg") no-repeat center center/cover;
+}
+
 /* Footer */
 footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     left: 0;
