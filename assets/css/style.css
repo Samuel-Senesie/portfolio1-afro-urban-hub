@@ -194,7 +194,8 @@ main {
     padding: 20px;
     box-shadow: 0 0 10px #3a3a3a;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
+    justify-content: center;
 }
 
 #register-container  h2 {
@@ -217,12 +218,96 @@ main {
     padding: 10px;
     border-radius: 5px;
     margin: 10px 0;
+}
 
+.radio-buttons{
+    margin: 20px 0;
+}
+
+.radio-buttons p{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 16px;
+}
+
+.radio-buttons > div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.radio-buttons > div > div{
+    margin-top: 5px;
+}
+.radio-buttons label{
+    margin-left: 20px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px ssolid #3a3a3a;
+    border-radius: 10px;
+    resize: vertical;
+    width: 100%;
+}
+
+.join-button{
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+join-button:hover {
+    background: green;
 }
 
 #benefits{
     background-color: aquamarine;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3a3a3a;
     text-align: center;
+}
+
+#benefits h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#benefits > div > div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #095403;
+}
+
+#benefits .collaboration {
+    margin-left: 20px;
+    display: flex;
+}
+
+/*#collaborate-photo img{
+    max-width: 100%;
+    height: auto;
+}*/
+
+
+#connect-photo img, #knowledge-sharing-photo img, #collaborate-photo img,  #make-a-difference-photo img{
+    max-width: 100%;
+    height: auto;
+}
+
+#benefits h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+#benefits p{
+    font-size: 16px;
 }
 
 
