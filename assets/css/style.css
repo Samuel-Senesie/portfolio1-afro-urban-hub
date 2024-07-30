@@ -143,7 +143,88 @@ main {
     /*Make main element take surplus space and push footer to page bottom*/
     flex: 1 0 auto;
     margin-top: 100px;
+
+    /* Add margin to top */
+    margin-top: 100px;
+
+    /*Flex properties for child elements*/
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
+/*Get involved page*/
+
+#get-involved {
+    background-color: antiquewhite;
+    background-position: 100%;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Oswald' , sans-serif;
+    flex-grow: 1;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#get-involved h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+}
+
+#get-involved p{
+    font-size: 1rem;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+#commmunity-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#register-container{
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#register-container  h2 {
+    font-family: 'Oswald' , sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #3a3a3a;
+    font-size: 1.2rem;
+}
+
+#register-container  form{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+#benefits{
+    background-color: aquamarine;
+    text-align: center;
+}
+
 
 /* City Photo */
 #city{
@@ -151,6 +232,9 @@ main {
     width: 100%;
     background: url("../images/Homepage.jpeg") no-repeat center center/cover;
 }
+
+/* Get Involved Page */
+
 
 /* Footer */
 footer {
