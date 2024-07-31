@@ -55,19 +55,22 @@ header a {
 .top-left {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .social-media-icons {
-    margin-left: 1em;
-    gap: 3px;
+    margin-left: 5px;
+    gap: 4px;
     display: flex;
-    gap: 3px;
+}
+
+.social-media-icons i {
+    font-size: 16px;
 }
 
 .top-bar a {
     color: #fff;
-    font-size: 1em;
+    font-size: 10px;
 }
 
 /* Bottom navbar */
@@ -210,6 +213,28 @@ main {
     border-radius: 5px;
     background-color: rgba(243, 242, 241, 0.8);
 }
+
+/* #our-values .values .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#our-values .value-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f2f1;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#our-values .value-item img {
+    max-width: 100%;
+    height: auto;
+} */
 
 #our-values {
     background-color: #333333;
@@ -471,7 +496,6 @@ label {
 
 /* Get Involved Page */
 
-
 /* Footer */
 footer {
     /*position: fixed;*/
@@ -617,15 +641,24 @@ h3 {
     /*Topbar */
     .top-bar {
         display: flex;
-        font-size: 150%;
+        font-size: 120%;
     }
 
     .top-left {
-        gap: 70px;
+        gap: 120px;
+        padding-left: 10px;
+    }
+
+    .top-left a {
+        font-size: 20px;
     }
 
     .social-media-icons {
         gap: 20px;
+    }
+
+    .social-media-icons i {
+        font-size: 120%;
     }
 
     /* Second navbar */
@@ -678,18 +711,31 @@ h3 {
     }
 
     #city {
-        height: 500px;
+        height: 450px;
     }
 
     #cover-text {
-        width: 100%;
-        padding-right: 10px;
+        width: 90%;
+        padding: 0px;
         bottom: 10px;
+        align-items: center;
     }
 
     #statement p {
-        margin: 10px;
+        margin: 0px;
     }
+
+    #our-values > div > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #our-values >div>div>div {
+        width: 45%;
+    }
+
 
     /* Footer */
     .contact+.quick-links+.follow-us {
@@ -788,6 +834,22 @@ h3 {
         display: flex;
         flex-direction: row;
     }
+
+    #our-values > div > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #our-values > div > div > div {
+        width: 45%;
+    }
+
+    #our-values > div > div >div img {
+        width: 100%;
+    }
+
 
     /* Footer */
     .footer-container {
