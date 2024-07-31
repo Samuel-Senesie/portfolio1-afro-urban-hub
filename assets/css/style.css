@@ -158,14 +158,14 @@ main {
 /*Get involved page*/
 
 #get-involved {
-    background-color: antiquewhite;
+    background-color: #f3f2f1;
     background-position: 100%;
     background-size: cover;
     width: 100%;
     font-family: 'Oswald' , sans-serif;
     flex-grow: 1;
     display: block;
-    margin: 10px 0;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -190,7 +190,7 @@ main {
 
 #register-container{
     display: flex;
-    background-color: #fff;
+    background-color: #f3f2f1;
     padding: 20px;
     box-shadow: 0 0 10px #3a3a3a;
     padding: 20px;
@@ -229,6 +229,11 @@ main {
     font-size: 16px;
 }
 
+.radio-buttons ::placeholder{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 30px;
+}
+
 .radio-buttons > div{
     display: flex;
     align-items: center;
@@ -250,6 +255,11 @@ textarea {
     width: 100%;
 }
 
+label{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 16px;
+}
+
 .join-button{
     background-color: blue;
     color: #fff;
@@ -261,13 +271,13 @@ textarea {
     margin-top: 20px;
 }
 
-join-button:hover {
+.join-button:hover {
     background: green;
 }
 
 #benefits{
-    background-color: aquamarine;
-    margin-top: 40px;
+    background-color: #333333;
+    margin-top: 2px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #3a3a3a;
@@ -277,14 +287,35 @@ join-button:hover {
 #benefits h3 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Oswald' , sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 #benefits > div > div{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    border: 1px solid #095403;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #f3f3f1;
 }
+
+#benefits > div > div h4{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 1.3rem;
+    color: #3a3a3a;
+}
+
+#benefits > div > div p{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #3a3a3a;
+}
+
+
 
 #benefits .collaboration {
     margin-left: 20px;
@@ -315,7 +346,7 @@ join-button:hover {
 #city{
     height: 800px;
     width: 100%;
-    background: url("../images/Homepage.jpeg") no-repeat center center/cover;
+    background: url("../images/city-photo.jpeg") no-repeat center center/cover;
 }
 
 /* Get Involved Page */
