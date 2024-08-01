@@ -147,7 +147,11 @@ header a {
 
 .nav-toggle-label {
     font-size: 2rem;
-    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-toggle-label i{
+    margin-right: 20px;
 }
 
 /* Main Section */
@@ -724,6 +728,7 @@ h3 {
     #statement p {
         margin: 0px;
     }
+    
 
     #our-values > div > div {
         display: flex;
@@ -732,10 +737,14 @@ h3 {
         justify-content: space-between;
     }
 
-    #our-values >div>div>div {
-        width: 45%;
+    #our-values >div > div >div h3{
+        font-size: 120%;
     }
 
+    #our-values >div > div >div p{
+        font-size: 20px;
+        padding: 10px;
+    }
 
     /* Footer */
     .contact+.quick-links+.follow-us {
@@ -842,13 +851,13 @@ h3 {
         justify-content: space-between;
     }
 
-    #our-values > div > div > div {
-        width: 45%;
+    #our-values > div > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    #our-values > div > div >div img {
-        width: 100%;
-    }
 
 
     /* Footer */
