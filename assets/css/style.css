@@ -416,6 +416,7 @@ textarea {
     border-radius: 10px;
     resize: vertical;
     width: 100%;
+    font-family: 'Oswald' , sans-serif;
 }
 
 label {
@@ -432,7 +433,10 @@ label {
     cursor: pointer;
     font-size: 18px;
     margin-top: 20px;
+    font-family: 'Oswald' , sans-serif;
 }
+
+.join-button[type="reset"]
 
 .join-button:hover {
     background: green;
