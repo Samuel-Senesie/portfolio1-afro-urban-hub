@@ -161,7 +161,10 @@ main {
 
     /*Flex properties for child elements*/
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column; *//*CHECK*/
+/*Check*/
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Index page */
@@ -297,6 +300,24 @@ main {
 
 /*Get involved page*/
 
+#involved-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* #get-involved,
+#register-container {
+    flex: 1 1 45%; */
+    /* box-sizing: border-box; */
+    /* margin: 10px;
+} */
+
+/*#registration-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+} */
+
 #get-involved {
     background-color: #f3f2f1;
     background-position: 100%;
@@ -355,10 +376,22 @@ main {
     font-size: 1.2rem;
 }
 
-#register-container form {
+/*#register-container form {
     display: flex;
     flex-direction: column;
-}
+}*/
+
+/*#registration-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}*/
+
+/*#registration-form > div {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+}*/
 
 .text-input {
     width: 100%;
@@ -436,19 +469,25 @@ label {
     font-family: 'Oswald' , sans-serif;
 }
 
-.join-button[type="reset"]
+.join-button[type="reset"] {
+    background-color: green;
+    color: #fff;
+}
 
-.join-button:hover {
+.join-button [type="reset"]:hover {
     background: green;
 }
 
 #benefits {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #333333;
     margin-top: 2px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #3a3a3a;
     text-align: center;
+    
 }
 
 #benefits h3 {
@@ -462,6 +501,8 @@ label {
 
 #benefits>div>div {
     display: flex;
+    flex-basis: 200px;
+    flex-grow: 1;
     flex-direction: column;
     margin-bottom: 20px;
     border: 1px solid #333333;
@@ -757,6 +798,40 @@ h3 {
         font-size: 20px;
         padding: 10px;
     }
+    #register-container {
+        width: 100%;
+    }
+    #registration-form {
+        display: grid;
+        grid-template-columns:  1fr 1fr; /* Allow the divs in the form to wrap and apprer in two columns */
+        gap: 10px;
+        width: 100%;
+    }
+
+    #interest {
+        grid-column: span 2;
+    }
+
+    .radio-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #registration-form .radio-buttons,
+    #registration-form textextra {
+        grid-column: span 2;
+    }
+
+
+    /*#get-involved,
+    #register-container{
+        flex: 1 1 100%;
+        margin: 0;
+    }*/
+
+    /*#registration-form {
+        grid-template-columns: 1fr;
+    }*/
 
     /* Footer */
     .contact+.quick-links+.follow-us {
@@ -775,7 +850,6 @@ h3 {
     .quick-links li {
         font-size: 140%;
     }
-
 
     #footer-social-icons i {
         font-size: 180%;
@@ -846,9 +920,31 @@ h3 {
     /* Main */
     main {
         /* Make main element take surplus spaces and push footer to page bottom */
-        flex: 1 0 auto;
+        /*flex: 1 0 auto;*/
         margin-top: 190px;
         font-size: 200%;
+    }
+
+    #get-involved,
+    #register-container {
+        flex: 1 1 100%;
+        margin: 10px;
+
+    }
+
+    #registration-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #registration-form > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form > div{
+        display: flex;
     }
 
     #benefits {
@@ -863,14 +959,15 @@ h3 {
         justify-content: space-between;
     }
 
-    #our-values > div > div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    #get-involved,
+    #register-container{
+        flex: 1 1 100%;
+        margin: 0;
     }
 
-
+    #registration-form {
+        grid-template-columns: 1fr;
+    }
 
     /* Footer */
     .footer-container {
