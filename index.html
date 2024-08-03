@@ -227,6 +227,15 @@
     <!--Fontawsom kit, impoerted form the website fontawsom.com-->
 
     <script src="https://kit.fontawesome.com/d021a7a29d.js" crossorigin="anonymous"></script>
+    <script>
+        function clearForm (event) {
+            event.preventDefault();
+            const form = document.getElementById ('registration-form');
+            setTimeout(() => {
+                form.reset ();
+            }; 1000);
+        }
+    </script>
 
 </body>
 

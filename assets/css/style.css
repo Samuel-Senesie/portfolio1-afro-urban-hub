@@ -376,6 +376,18 @@ main {
     font-size: 1.2rem;
 }
 
+#register-container h3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #3a3a3a;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+
 /*#register-container form {
     display: flex;
     flex-direction: column;
@@ -781,7 +793,6 @@ h3 {
     #statement p {
         margin: 0px;
     }
-    
 
     #our-values > div > div {
         display: flex;
@@ -801,6 +812,19 @@ h3 {
     #register-container {
         width: 100%;
     }
+
+    #get-involved h2{
+        font-size: 150%;
+    }
+
+    #get-involved p{
+        font-size: 110%;
+    }
+
+    #register-container h3{
+        font-size: 140%;
+    }
+
     #registration-form {
         display: grid;
         grid-template-columns:  1fr 1fr; /* Allow the divs in the form to wrap and apprer in two columns */
@@ -809,7 +833,14 @@ h3 {
     }
 
     #interest {
-        grid-column: span 2;
+        grid-column: span 2; /* Allows the h2 element to merge and center the other row */
+    }
+
+    #location, #work{
+        height: 60px;
+    }
+    .text-input {
+        height: 60px;
     }
 
     .radio-buttons {
@@ -822,16 +853,16 @@ h3 {
         grid-column: span 2;
     }
 
+    #benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
 
-    /*#get-involved,
-    #register-container{
-        flex: 1 1 100%;
-        margin: 0;
-    }*/
-
-    /*#registration-form {
-        grid-template-columns: 1fr;
-    }*/
+    #benefits-of-joining{
+        grid-column: span 2;
+    }
 
     /* Footer */
     .contact+.quick-links+.follow-us {
@@ -924,32 +955,48 @@ h3 {
         margin-top: 190px;
         font-size: 200%;
     }
-
-    #get-involved,
-    #register-container {
-        flex: 1 1 100%;
-        margin: 10px;
-
-    }
-
-    #registration-form {
+    #involved-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        width: 100%;
     }
 
-    #registration-form > div {
+    /*#get-involved,
+    #register-container {
+        flex: 1 1 100%;
+        margin: 10px;
+    } */
+
+    #registration-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    } 
+
+    #interest{
+        margin-top: 0px;
+    }
+
+    /*#registration-form > div {
         display: flex;
         flex-direction: column;
-    }
-
-    form > div{
-        display: flex;
-    }
+    } */
 
     #benefits {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    #benefits > div > div p{
+        font-size: 20px;
+    }
+
+    #benefits-of-joining{
+        grid-column: span 4;
     }
 
     #our-values > div > div {
