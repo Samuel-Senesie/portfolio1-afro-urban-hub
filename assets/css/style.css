@@ -297,6 +297,37 @@ main {
     margin-bottom: 10px;
 }
 
+/* About Us Page */
+
+
+#our-story {
+    background-color: #f3f2f1;
+    background-position: 100%;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    flex-grow: 1;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+#our-story h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+#our-story p{
+    font-family: 'Oswald' , sans-serif;
+    padding: 10px;
+}
+    
+
 
 /*Get involved page*/
 
@@ -747,7 +778,7 @@ h3 {
     }
 
     .logo-title {
-        font-size: 200%;
+        font-size: 180%;
         line-height: 85px;
     }
 
@@ -954,6 +985,7 @@ h3 {
         /*flex: 1 0 auto;*/
         margin-top: 190px;
         font-size: 200%;
+        width: 100%;
     }
     #involved-container{
         display: grid;
