@@ -299,6 +299,12 @@ main {
 
 /* About Us Page */
 
+#about-us-cover {
+    height: 400px;
+    width: 100%;
+    background: url('../images/about-us-cover.jpg') no-repeat center center/cover;
+    position: relative;
+}
 
 #our-story {
     background-color: #f3f2f1;
