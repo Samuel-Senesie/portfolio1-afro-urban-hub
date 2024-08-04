@@ -335,13 +335,23 @@ main {
 
 #our-team {
     padding: 50px 20px;
-   text-align: center;
-   background-color: #333333;
+    text-align: center;
+    background-color: #333333;
 }
 
-#our-team  h2{
-    font-size: 2.5;
-   margin-bottom: 20px;
+#our-team  h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+#our-team  h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Oswald' , sans-serif;
 }
 
 .team-container {
@@ -356,8 +366,8 @@ main {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: calc(25% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*width: calc(25% - 20px);*/
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     transition:transform 0.3s ease;
 }
 
@@ -365,19 +375,31 @@ main {
     transform: translateY(-10px);
 }
 
-.team-member img {
+.team-member-photo {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team-member-photo img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .team-member h3{
-    font-size: 1.5px;
+    font-size: 15px;
     margin: 10px 0;
+    color: #333333;
 }
 
 .team-member p {
     padding: 0 10px 10px;
     color: #555;
+    font-family: 'Oswald' , sans-serif;
 }
     
 
