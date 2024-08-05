@@ -680,9 +680,24 @@ label {
     flex-grow: 1;
 }
 
-#contact-form-container  h2{
+#contact-form {
+    position: relative;
+    z-index: 1;
+    color: #000;
+    background-color: darkseagreen;
+    text-align: left;
+    padding: 30px;
+    top: 75px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0px 0px rgba(8, 43, 29, 0.7);
+    margin: 30px;
+}
+
+#contact-form-container h2{
     font-family: 'Oswald' , sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -700,22 +715,6 @@ label {
     height: 100%;
     background-color: rgba(255, 255, 255, 255, 0.3);
     transition: all .15s;
-
-
-}
-
-#contact-form {
-    position: relative;
-    z-index: 1;
-    color: #000;
-    background-color: darkseagreen;
-    text-align: left;
-    padding: 30px;
-    top: 150px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 10px 10px 0px 0px rgba(8, 43, 29, 0.7);
-    margin: 30px;
 }
 
 .send-button {
@@ -1027,6 +1026,31 @@ h3 {
 
     #benefits-of-joining{
         grid-column: span 2;
+    }
+
+    /* Contact form section */
+
+    #contact-form {
+        top: 85px;
+        margin: 50px;
+    }
+
+    #contact-form h2{
+        font-size: 130%;
+    }
+
+    #contact-form label {
+        font-size: 20px;
+    }
+
+    #contact-form .text-input {
+        font-size: 15px;
+    }
+
+    .send-button {
+        font-size: 140%;
+        width: 140px;
+        letter-spacing: 3px;
     }
 
     /* Footer */
