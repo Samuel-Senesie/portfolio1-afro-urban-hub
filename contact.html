@@ -84,7 +84,40 @@
     </header>
 
     <!--Main Content-->
-    <main>This is the main content section</main>
+    <main>
+        <section id="contact-form-container">
+            <div >
+                <form id="contact-form" method="POST" action="https://formdump.codeinstitute.net">
+                    <div>
+                        <h2>CONTACT US HERE!</h2>
+                    </div>
+                    <div>
+                        <label for="full-name">FULL NAME</label>
+                        <input type="text" name="full_name" id="full-name" placeholder="Full name" class="text-input"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email-address">EMAIL</label>
+                        <input type="email" name="email_address" id="email-address" placeholder="Email address"
+                            class="text-input" required>
+                    </div>
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone_number" id="phone-number" placeholder="Phone number"
+                            class="text-input" required>
+                    </div>
+                    <div>
+                        <label for="comment">COMMENTS</label>
+                        <textarea name="comment" id="comment" placeholder="Leave us your comment"></textarea>
+
+                    </div>
+                    <div>
+                        <button type="submit" class="send-button">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer id="footer">
