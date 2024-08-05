@@ -1030,7 +1030,14 @@ h3 {
 
     /* Contact form section */
 
+    #contact-form-container{
+        background-position: center;
+        position: relative;
+    }
+
     #contact-form {
+        width: 500px;
+        position: absolute;
         top: 85px;
         margin: 50px;
     }
