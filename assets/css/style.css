@@ -161,8 +161,9 @@ main {
 
     /*Flex properties for child elements*/
     display: flex;
-    /*flex-direction: column; *//*CHECK*/
-/*Check*/
+    /*flex-direction: column; */
+    /*CHECK*/
+    /*Check*/
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -199,7 +200,6 @@ main {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    /*background: url('../images/sdg11.png') no-repeat center/cover; */
 }
 
 #statement p {
@@ -216,28 +216,6 @@ main {
     border-radius: 5px;
     background-color: rgba(243, 242, 241, 0.8);
 }
-
-/* #our-values .values .menu-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#our-values .value-item {
-    display: flex;
-    flex-direction: column;
-    background-color: #f3f2f1;
-    border: 1px solid #3a3a3a;
-    border-radius: 5px;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-}
-
-#our-values .value-item img {
-    max-width: 100%;
-    height: auto;
-} */
 
 #our-values {
     background-color: #333333;
@@ -328,8 +306,8 @@ main {
     background-color: #333333;
 }
 
-#our-story p{
-    font-family: 'Oswald' , sans-serif;
+#our-story p {
+    font-family: 'Oswald', sans-serif;
     padding: 10px;
 }
 
@@ -342,7 +320,7 @@ main {
     width: 100%;
 }
 
-#what-we-do h2{
+#what-we-do h2 {
     font-size: 200%;
     background-color: rgba(8, 43, 29, 0.5);
     text-align: center;
@@ -353,15 +331,15 @@ main {
     z-index: 1;
 }
 
-#what-we-do-container > div {
+#what-we-do-container>div {
     background-color: #f3f2f1;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 30px;
 }
 
-#what-we-do-container h3{
+#what-we-do-container h3 {
     background-color: #f3f2f1;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 30px;
     text-decoration: none;
 }
@@ -372,26 +350,26 @@ main {
     background-color: #333333;
 }
 
-#our-team  h2{
+#our-team h2 {
     font-size: 25px;
     margin-bottom: 20px;
     color: #fff;
     text-decoration: none;
 }
 
-#our-team  h3{
+#our-team h3 {
     font-size: 25px;
     margin-bottom: 20px;
     color: #333333;
     text-decoration: none;
 }
 
-#our-team  h4{
+#our-team h4 {
     font-size: 20px;
     margin-bottom: 20px;
     color: #333333;
     text-decoration: none;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .team-container {
@@ -406,9 +384,7 @@ main {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    /*width: calc(25% - 20px);*/
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-    transition:transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .team-member:hover {
@@ -423,14 +399,14 @@ main {
     overflow: hidden;
 }
 
-.team-member-photo img{
+.team-member-photo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.team-member h3{
+.team-member h3 {
     font-size: 15px;
     margin: 10px 0;
     color: #333333;
@@ -439,12 +415,12 @@ main {
 .team-member p {
     padding: 0 10px 10px;
     color: #555;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*Get involved page*/
 
-#involved-container{
+#involved-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -525,17 +501,18 @@ main {
     padding: 10px;
     border-radius: 5px;
     margin: 10px 0;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-#location, #work{
+#location,
+#work {
     width: 100%;
     height: 40px;
     border: 1px solid #3a3a3a;
     padding: 10px;
     border-radius: 5px;
     margin: 10px 0;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .radio-buttons {
@@ -573,7 +550,7 @@ textarea {
     border-radius: 10px;
     resize: vertical;
     width: 100%;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 label {
@@ -590,7 +567,7 @@ label {
     cursor: pointer;
     font-size: 18px;
     margin-top: 20px;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .join-button[type="reset"] {
@@ -611,7 +588,7 @@ label {
     border-radius: 10px;
     box-shadow: 0 0 10px #3a3a3a;
     text-align: center;
-    
+
 }
 
 #benefits h3 {
@@ -652,11 +629,6 @@ label {
     display: flex;
 }
 
-/*#collaborate-photo img{
-    max-width: 100%;
-    height: auto;
-}*/
-
 
 #connect-photo img,
 #knowledge-sharing-photo img,
@@ -676,7 +648,7 @@ label {
 }
 
 /* Contact Cover Page */
-#contact-form-container{
+#contact-form-container {
     height: 100vh;
     background-image: url("../images/laptop.jpg");
     background-size: cover;
@@ -702,18 +674,18 @@ label {
     margin: 30px;
 }
 
-#contact-form-container h2{
-    font-family: 'Oswald' , sans-serif;
+#contact-form-container h2 {
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#contact-form-container  label{
+#contact-form-container label {
     color: #fff;
 }
 
-#contact-form-container::before{
+#contact-form-container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -733,12 +705,11 @@ label {
     cursor: pointer;
     font-size: 18px;
     margin-top: 20px;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Footer */
 footer {
-    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     left: 0;
@@ -977,18 +948,18 @@ h3 {
         flex-wrap: wrap;
     }
 
-    #our-values > div > div {
+    #our-values>div>div {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 
-    #our-values >div > div >div h3{
+    #our-values>div>div>div h3 {
         font-size: 120%;
     }
 
-    #our-values >div > div >div p{
+    #our-values>div>div>div p {
         font-size: 18px;
         padding: 10px;
     }
@@ -999,7 +970,7 @@ h3 {
         width: 100%;
     }
 
-    #what-we-do h2{
+    #what-we-do h2 {
         font-size: 200%;
     }
 
@@ -1010,7 +981,7 @@ h3 {
         gap: 10px;
     }
 
-    #our-team h2{
+    #our-team h2 {
         font-size: 240%;
     }
 
@@ -1020,7 +991,7 @@ h3 {
         border-radius: 50%;
     }
 
-    .team-member-photo img{
+    .team-member-photo img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
@@ -1031,32 +1002,36 @@ h3 {
         width: 100%;
     }
 
-    #get-involved h2{
+    #get-involved h2 {
         font-size: 150%;
     }
 
-    #get-involved p{
+    #get-involved p {
         font-size: 110%;
     }
 
-    #register-container h3{
+    #register-container h3 {
         font-size: 140%;
     }
 
     #registration-form {
         display: grid;
-        grid-template-columns:  1fr 1fr; /* Allow the divs in the form to wrap and apprer in two columns */
+        grid-template-columns: 1fr 1fr;
+        /* Allow the divs in the form to wrap and apprer in two columns */
         gap: 10px;
         width: 100%;
     }
 
     #interest {
-        grid-column: span 2; /* Allows the h2 element to merge and center the other row */
+        grid-column: span 2;
+        /* Allows the h2 element to merge and center the other row */
     }
 
-    #location, #work{
+    #location,
+    #work {
         height: 60px;
     }
+
     .text-input {
         height: 60px;
     }
@@ -1078,13 +1053,13 @@ h3 {
         width: 100%;
     }
 
-    #benefits-of-joining{
+    #benefits-of-joining {
         grid-column: span 2;
     }
 
     /* Contact form section */
 
-    #contact-form-container{
+    #contact-form-container {
         background-position: center;
         position: relative;
     }
@@ -1096,7 +1071,7 @@ h3 {
         margin: 50px;
     }
 
-    #contact-form h2{
+    #contact-form h2 {
         font-size: 130%;
     }
 
@@ -1201,7 +1176,6 @@ h3 {
     /* Main */
     main {
         /* Make main element take surplus spaces and push footer to page bottom */
-        /*flex: 1 0 auto;*/
         margin-top: 190px;
         font-size: 200%;
         width: 100%;
@@ -1209,7 +1183,7 @@ h3 {
 
     /* Home section */
 
-    #statement{
+    #statement {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -1227,7 +1201,7 @@ h3 {
         flex-wrap: wrap;
     }
 
-    #our-values > div > div > div p{
+    #our-values>div>div>div p {
         font-size: 16px;
     }
 
@@ -1241,12 +1215,12 @@ h3 {
         height: 550px;
     }
 
-    #what-we-do h2{
-            font-size: 300%;
-            bottom: 170px;
+    #what-we-do h2 {
+        font-size: 300%;
+        bottom: 170px;
     }
 
-    #our-story{
+    #our-story {
         flex-wrap: wrap;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1254,7 +1228,7 @@ h3 {
         justify-content: center;
     }
 
-    #our-story h2{
+    #our-story h2 {
         background-color: #f3f2f1;
         color: darkseagreen;
         font-size: 250%;
@@ -1267,7 +1241,7 @@ h3 {
         gap: 10px;
     }
 
-    #our-team h2{
+    #our-team h2 {
         font-size: 240%;
     }
 
@@ -1277,7 +1251,7 @@ h3 {
         border-radius: 50%;
     }
 
-    .team-member-photo img{
+    .team-member-photo img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
@@ -1286,21 +1260,21 @@ h3 {
 
     /* Get involved section */
 
-    #involved-container{
+    #involved-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         width: 100%;
     }
 
-    #registration-form{
+    #registration-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         width: 100%;
-    } 
+    }
 
-    #interest{
+    #interest {
         margin-top: 0px;
     }
 
@@ -1310,16 +1284,16 @@ h3 {
         gap: 10px;
         width: 100%;
     }
-    
-    #benefits > div > div p{
+
+    #benefits>div>div p {
         font-size: 20px;
     }
 
-    #benefits-of-joining{
+    #benefits-of-joining {
         grid-column: span 4;
     }
 
-    #our-values > div > div {
+    #our-values>div>div {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -1327,7 +1301,7 @@ h3 {
     }
 
     #get-involved,
-    #register-container{
+    #register-container {
         flex: 1 1 100%;
         margin: 0;
     }
