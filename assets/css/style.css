@@ -441,8 +441,6 @@ main {
     color: #555;
     font-family: 'Oswald' , sans-serif;
 }
-    
-
 
 /*Get involved page*/
 
@@ -519,25 +517,6 @@ main {
     font-size: 1rem;
     text-decoration: none;
 }
-
-
-
-/*#register-container form {
-    display: flex;
-    flex-direction: column;
-}*/
-
-/*#registration-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}*/
-
-/*#registration-form > div {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 1;
-}*/
 
 .text-input {
     width: 100%;
@@ -1439,22 +1418,22 @@ h3 {
     }
 
     #menu {
-        font-size: 112%;
+        font-size: 105%;
         padding-top: 15px;
         padding-right: 3em;
         gap: 3em;
     }
 
     .logo-title {
-        font-size: 300%;
+        font-size: 250%;
         letter-spacing: 3px;
         padding-left: 10px;
         padding-bottom: 5px;
     }
 
     .logo img {
-        height: 95px;
-        width: 95px;
+        height: 90px;
+        width: 90px;
         margin-left: 2em;
         margin-top: 5px;
     }
