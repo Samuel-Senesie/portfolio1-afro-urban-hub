@@ -36,9 +36,9 @@
                             class="fa-solid fa-envelope"></i>info@afrourbanhub.org</a>
                 </div>
                 <!--Link Whatsapp numbeer to page using the code: https://wa.me/1XXXXXXXXXX, copied from faq.whatsapp-->
-                <div class="whatsapp">
-                    <a href="https://wa.me/123456789" target="_blank"><i
-                            class="fa-brands fa-whatsapp"></i>+123456789</a>
+                <div class="whatsapp-link">
+                    <a href="https://wa.me/123456789" target="_blank" aria-label="Link to Organization's Whatsapp page"><i
+                            class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="top-left">
@@ -46,7 +46,7 @@
                     <a href="https://facebook.com/afrourbanhub" target="_blank" rel="noopener"
                         aria-label="visit our Facebook page (opens in a newtab)"><i
                             class="fa-brands fa-facebook"></i></a>
-                    <a href="https://linkedin.com/afrourbanhub" target="_blank" rel="noopener"
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener"
                         aria-label="visit our linkedin page (opens in new window)"><i
                             class="fa-brands fa-linkedin"></i></a>
                     <a href="https://instagram.com" target="_blank" rel="noopener"
@@ -55,8 +55,9 @@
                     <a href="https://youtube.com" target="_blank" rel="noopener"
                         aria-label="visit our youtube page (opens in new window)"><i
                             class="fa-brands fa-youtube"></i></a>
-                    <a href="https://tiktok.com" target="_blank" rel="noopener"
-                        aria-label="visit our tiktok page (opens in new window)"><i class="fa-brands fa-tiktok"></i></a>
+                            <!--create space between touchable icons on the topbar-->
+                    <!--<a href="https://tiktok.com" target="_blank" rel="noopener"
+                        aria-label="visit our tiktok page (opens in new window)"><i class="fa-brands fa-tiktok"></i></a>-->
                 </div>
             </div>
         </nav>
@@ -131,7 +132,7 @@
                     </div>
                     <!--Location and type of work dropdown list-->
                     <div>
-                        <select name="work" id="work">
+                        <select name="work" id="work" aria-label="Select your type of work">
                             <option value=" " disabled selected> Select your type of work</option>
                             <option value="Acc">Accademic</option>
                             <option value="R&D">Research and Development</option>
@@ -144,7 +145,7 @@
                         </select>
                     </div>
                     <div>
-                        <select name="location" id="location">
+                        <select name="location" id="location" aria-label="Select your business location">
                             <option value=" " disabled selected>Where is your main place of business&#63;</option>
                             <option value="WU">Wester Area URBAN</option>
                             <option value="WR">Western Area Rural</option>
@@ -314,7 +315,7 @@
                     <li><a href="https://facebook.com/afrourbanhubsl/" target="_blank" rel="noopener"
                             aria-label="visit our Facebook page (opens in a newtab)"><i
                                 class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://linkedin.com/afrourbanhub/" target="_blank" rel="noopener"
+                    <li><a href="https://linkedin.com/" target="_blank" rel="noopener"
                             aria-label="visit our linkedin page (opens in new window)"><i
                                 class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://instagram.com/" target="_blank" rel="noopener"
@@ -331,8 +332,8 @@
             </div>
         </div>
         <!--Back to top button-->
-        <a href="#" class="back-to-top">
-            <i class="fa-sharp fa-solid fa-circle-up"></i>
+        <a href="#" class="back-to-top" aria-label="Back to top">
+            <i class="fa-sharp fa-solid fa-circle-up" aria-hidden="true"></i> <!--Make icon discernible-->
         </a>
 
         <div class="bottom-bar">

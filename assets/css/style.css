@@ -32,7 +32,7 @@ h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff;
+    color: white;
 }
 
 header a {
@@ -48,29 +48,29 @@ header a {
     padding: 0.5em;
     background-color: rgba(8, 43, 29, 0.7);
     height: 40px;
-    font-size: small;
+    font-size: 18px;
     width: 100%;
 }
 
 .top-left {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .social-media-icons {
     margin-left: 5px;
-    gap: 4px;
+    gap: 10px;
     display: flex;
 }
 
 .social-media-icons i {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .top-bar a {
-    color: #fff;
-    font-size: 10px;
+    color: white;
+    font-size: 18px;
 }
 
 /* Bottom navbar */
@@ -191,7 +191,7 @@ main {
 
 #cover-text h3 {
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
 
 #statement {
@@ -353,7 +353,7 @@ main {
 #our-team h2 {
     font-size: 25px;
     margin-bottom: 20px;
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -489,7 +489,7 @@ main {
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 0 10px #3a3a3a;
-    color: #fff;
+    color: white;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -560,7 +560,7 @@ label {
 
 .join-button {
     background-color: blue;
-    color: #fff;
+    color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -597,7 +597,7 @@ label {
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
 }
 
 #benefits>div>div {
@@ -682,7 +682,7 @@ label {
 }
 
 #contact-form-container label {
-    color: #fff;
+    color: white;
 }
 
 #contact-form-container::before {
@@ -698,7 +698,7 @@ label {
 
 .send-button {
     background-color: rgba(8, 43, 29, 0.7);
-    color: #fff;
+    color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -730,13 +730,13 @@ footer {
 }
 
 .contact p {
-    color: #fff;
+    color: white;
     font-size: 0.7rem;
     letter-spacing: 1px;
 }
 
 .footer-content p {
-    color: #fff;
+    color: white;
 }
 
 h3 {
@@ -763,7 +763,7 @@ h3 {
 #quick-link-list a {
     text-decoration: underline;
     font-size: 1rem;
-    color: #fff;
+    color: white;
 }
 
 .follow-us {
@@ -781,7 +781,7 @@ h3 {
 
 #footer-social-icons i {
     font-size: 150%;
-    color: #fff;
+    color: white;
     padding: 5%;
 }
 
