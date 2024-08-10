@@ -38,8 +38,10 @@
       * [How to Fork](<#how-to-fork>)
       * [How to Clone](<#how-to-clone>)
 * [Testing](<#testing>)
-  * [Code Validation](<#code-validation>)  
-  * [Lighthouse testing](<#lighthouse-testing>)
+  * [Automated Testing ](<#automated-testing>) 
+    * [HTML Validation](<#html-validation>)
+    * [CSS Validation](<#css-validation>)
+    * [Lighthouse testing](<#lighthouse-testing>)
   * [Responsive Testing](<#responsive-testing>)
   * [Accessibility Testing](<#accessibility-testing>)
   * [Manual Testing](<#manual-testing>)
@@ -47,7 +49,6 @@
   * [Bugs Fixed](<#bugs-fixed>)
   * [Bugs not Fixed](<#bugs-not-fixed>)
 * [Technologies Used](<#technologies-used>)
-* [Deployment](<#deployment>)
 * [Credits](<#credits>)
 * [Acknowledgments](<#acknowledgments>)
 
@@ -310,6 +311,87 @@ Use the following steps to clone this repository:
 ## Testing
 
 ### Automated Testing 
+#### HTML Validation
+The HTML and CSS codes for the Afro Urban Hub website were validated using W3C HTML and CSS Validators. Bellow is a summary of the issues identified for all the pages and the actions taken:
+
+**Home Page**
+
+![W3C HTML Validator - Home Page](assets/readme-images/w3c-validator-message-home.png)
+
+
+![W3C HTML Validator - Home Page1](assets/readme-images/w3s-validator-message_home1.png)
+
+* **ERROR 1:** Bad value for "X-AU-Compatiable" for the `**http-equiv**` attribute on the `<meta>`element (line 7, columns 5-57)
+* **SOLUTION:** Corrected a typo from 'AU' to UA in the `**http-equiv**` attribute. 
+
+
+* **ERROR 2:** Attribute "keyword" not allowed on `<meta>` element (line 12, columns 5-128).
+* **ERROE 3:** Missing required attributes (`**charest**`, `**content**`, `**http-equiv**`, `**name**`, `**itemprop**`, `**name**`, `**propoerty**`) on `<meta>`element (line 12 columns 5-128)
+* **SOLUTION:** Added miising `**name**` and `**content**`attributes to reolve both errors
+
+* **INFOR:** Trailing slash on void elements interacts badly with unquoted attribute values (line21, columns 5-63).
+* **SOULUTION:** Removed trailing slashes from `<link>`elements across all pages.
+
+* **ERROR 4:** Attribute 'el' not allowed on `<a>`element (line 56, columns 21-82).
+* **SOLUTIONS:** Corrected the misspelling 'el' to 'rel' in the `<a>`element attribute.
+
+**About Us Page**
+
+* **ERROR:** Same as Error 1 on the Home page.
+* **SOLUTION:** Corrected as per Home page solution.
+
+
+**Get Involved Page**
+
+![W3C HTML Validator - Get Involved Page](assets/readme-images/w3c-validator-message-get-involved.png)
+
+* **ERROR 1:** Duplicated ID 'interest' (line 110, columns 25-42).
+* **SOLUTION:** Removed duplicated ID from `<h3>`element. 
+
+* **WARNING:** The first occurrence of ID 'interest' (line 109, columns 21-39).
+* **SOLUTION:** Retained the first occurrence and removed the duplicated ID from `<h3>` element.
+
+* **ERROR 2:** The value for the "for" attribute of the `<label>`element must match the ID of the non-hidden form control (line 169, columns 25-55).
+* **SOLUTION:** Replaced underscores with hyphens in the input ID to match the `for`attribute.
+
+
+**Contact US Page:** 
+The Contact Us page passed the W3C HTML validation without any errors or warnings, likely due to the corrsctions applied across other pages.
+
+#### CSS Validation
+
+The CSS codes for the Afro Urban Hub website was validated using W3C CSS Validators. Bellow is a summary of the issues identified and the actions taken:
+
+![W3C CSS Validator](assets/readme-images/w3s-css-validation-message.png)
+
+* **ERROR 1:** Line 549, `textarea`Value Error: `border 'ssolid' is not a color; value: '1px ssolid #3a3a3a'`.
+* **SOLUTION:** Corrected the typo by changing "ssolid" to "solid"
+
+* **ERROR 2:** lINE 695, `#contact-form-container::before`; Value Error: `background-color '0.3' is not a valid color 3 or 6 hexadecimals numbers`
+* **SOLUTION:** Corrected the color value from `rgba(255, 255, 255, 225, 0.3)`to `rgba(255, 255, 255 , 0.3)` and adjusted the alpha value from 255 to 225.
+
+* **ERROR 3:** Line 743, `h3`; Value Error: `font-size unknown dimension '1rempx'`
+* **SOLUTION:** Fixed the font-size value to `1rem`instead of `1rempx`.
+
+* **ERROR 4:** Line 791, `#quick-links a::before`; Parse Error: `(-50% -50%)`
+* **ERROR 5:** Line 808, `#footer-social-icons li::before`; Parse Error: `(-50% -50%)`
+* **SOLUTION:** Removed erroneous code as it was redundant.
+
+* **ERROR 6:** Line 1318, `.footeer-container`; Value Error: `width Too many values or values are not recognized: '100%px'`
+* **SOLUTION:** Corrected the width value from `100%px`to `100%`.
+
+* **WARNING 1:** Line 2: Imported style sheets are not checked in direct input and file upload modes.
+* **SOLUTION:** This warning is as a result of the limitations to the W3C Validator, which cannot check third-party code. No further action was taken. 
+
+* **WARNING 2:** Line 695: `'255' is out of range`.
+* **SOLUTION:** Corrected the out-of-range value from 255 to 225.
+
+All errors and warnings from the W3C Validator were addressed. After applying the necessasry corrections, the HTML and CSS codes were revalidated and no further errors were found.
+
+![W3C HTML Validator - Validated](assets/readme-images/w3c-validation-pass-message.png)
+![W3C CSS Validator - Validated](assets/readme-images/css-validation-pass-message.png)
+
+
 #### 
 
 
