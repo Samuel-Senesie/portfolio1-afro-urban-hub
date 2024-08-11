@@ -321,13 +321,13 @@ The HTML and CSS codes for the Afro Urban Hub website were validated using W3C H
 
 ![W3C HTML Validator - Home Page1](assets/readme-images/w3s-validator-message_home1.png)
 
-* **ERROR 1:** Bad value for "X-AU-Compatiable" for the `**http-equiv**` attribute on the `<meta>`element (line 7, columns 5-57)
-* **SOLUTION:** Corrected a typo from 'AU' to UA in the `**http-equiv**` attribute. 
+* **ERROR 1:** Bad value for "X-AU-Compatiable" for the `http-equiv` attribute on the `<meta>`element (line 7, columns 5-57)
+* **SOLUTION:** Corrected a typo from 'AU' to UA in the `http-equiv` attribute. 
 
 
 * **ERROR 2:** Attribute "keyword" not allowed on `<meta>` element (line 12, columns 5-128).
-* **ERROE 3:** Missing required attributes (`**charest**`, `**content**`, `**http-equiv**`, `**name**`, `**itemprop**`, `**name**`, `**propoerty**`) on `<meta>`element (line 12 columns 5-128)
-* **SOLUTION:** Added miising `**name**` and `**content**`attributes to reolve both errors
+* **ERROE 3:** Missing required attributes (`charest`, `content`, `http-equiv`, `name`, `itemprop`, `name`, `propoerty`) on `<meta>`element (line 12 columns 5-128)
+* **SOLUTION:** Added miising `name` and `content`attributes to reolve both errors
 
 * **INFOR:** Trailing slash on void elements interacts badly with unquoted attribute values (line21, columns 5-63).
 * **SOULUTION:** Removed trailing slashes from `<link>`elements across all pages.
