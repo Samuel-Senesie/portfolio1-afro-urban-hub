@@ -420,6 +420,68 @@ After conducting a Lighthouse test via Chrome DevTools to assess Performance, Ac
 * **Problem:** Images were not properly sized, affecting performance.
 * **Solution:** The problem was addressed by removing, resizing and compressing icons, logo, and images using TinyPNG and ILoveIMG. While performance improved, the issue was not completely reloved. 
 
+### Manual Testing
+The website was testd manually to know if all the links and functions work properly.
+
+#### Navigation Bar
+**Top Bar**
+* Verified that clicking the email link opens a mailto window in a new tab, with no broken link.
+
+* Confirmed that clicking the WhatsApp icon opens the WhatsApp web page in a new tab, and on smartphones, it redirects to the WhatsApp app.
+
+* Verified that clicking the Facebook icon takes users to the Afro Urban Hub Facebook page, and all other social media icons open their respective default homepages. All icons and links in the top bar have the correct alt text and aria-labels.
+
+**Main Nab Bar**
+* All links navigate to the correct pages and open in a new tab, with no broken links.
+
+* Confirmed that clicking the logo returns users to the homepage, which is the default landing page, and that the logo has the correct alt text.
+
+* Verified that the active page is highlighted with an underline beneath the menu item.
+Ensured the navigation bar is fully responsive across all devices.
+
+* Checked that the hover effect and pointer are consistent for all items
+
+#### Home Page
+* Confirmed that all images and illustrations have the correct alt texts and aria-labels.
+
+* Verified that all elements are fully responsive.
+
+#### Get Involved Page
+
+* Confirmed that all images have the correct alt texts and aria-labels.
+
+* Verified that the form cannot be submitted if mandatory fields are not filled and Terms are not accepted.
+
+* Ensured that when users complete all mandatory fields and click the “Get Involved” button, the information is sent to https://formdump.codeinstitute.net.
+
+* Verified that all elements are fully responsive.
+
+![Verified Get Involved Form](assets/readme-images/validation-get-invloved-form.png)
+
+#### Contact Page
+* Confirmed that all images have the correct alt texts and aria-labels.
+
+* Verified that the form cannot be submitted if mandatory fields are not filled and Terms are not accepted.
+
+* Ensured that when users complete all mandatory fields and click the “SEND” button, the information is sent to https://formdump.codeinstitute.net.
+Verified that all elements are fully responsive.
+
+
+![Verified Contact Form](assets/readme-images/validation-contact-form.png)
+
+#### Back-to-Top Button
+
+* Confirmed that clicking the back-to-top button scrolls users back to the top of the page automatically. Verified that the icon has the correct aria-label.
+
+
+#### Footer
+* Verified that all links under the Quick Links section open correctly in a new tab.
+
+* Confirmed that on hover, the white social media icons change color to aqua.
+
+* Ensured that clicking the Facebook icon takes users to the Afro Urban Hub Facebook page, and all other social media icons open their default homepages. All icons and links in the footer have the correct alt text and aria-labels.
+
+
 ## Technologies Used
 * **[GitPod Enterprise](https://www.gitpod.io/enterprise):** Used for writing HTML and CSS codes. HTML5 was used to strcture the content of the website, while CSS3 provided styling to enhance the user experience. 
 
@@ -435,9 +497,39 @@ After conducting a Lighthouse test via Chrome DevTools to assess Performance, Ac
 
 * [TinyPNG](https://tinypng.com) and [ILoveIMG](https://www.iloveimg.com/) tools were used for resizing and compressing images.
 
+* [Cooler.co](https://coolors.co/) was used to generate the colour palette.
+
 * **ChatGPT:** Assisted with editing the text contents for the website and this README document.
 
-### A
+## Credits
+
+* **Fonts:** Sourced and imported from [Google Fonts](https://fonts.google.com/)
+
+* **Icons:** Sourced from [Font Awsome](https://fontawesome.com/).
+
+* **images and Illustration:** creits to [Pixapay](https://pixabay.com/) and [Unsplash](https://unsplash.com).
+
+* **Logo:** Created by Afro Urban Hub
+
+* **Cover Image on Home Page:** Provided by the author of this work.
+
+* **Image Optimization:** Performed using [TinyPNG](https://tinypng.com) and [ILoveIMG](https://www.iloveimg.com/)
+
+* **Footer Design:** Inspired by [Taru Code](https://www.youtube.com/watch?v=dlsjiphBris)
+
+* **Back-to-Top Button** Adapted from [Drake Code](https://www.youtube.com/watch?v=Vef9bxTilCU)
+
+* **Double Navbar:** Implemented following the tutorial by [Code Tonight](https://www.youtube.com/watch?v=F3pSGnhV-H8)
+
+* **JavaScript Code for Font Awesome Kit:** Imported from [Font Awsome](https://fontawesome.com/).
+
+* **JavaScript Code for Clear Form After Submission:** Developed with assitance from ChatGPT.
+
+* **Wedsite Inspiration and Design:** Drawn from the Love Running Walkthrough Project for the Code Institute's Full Stak Software Development Diploma Course.
+
+## Acknowledgements
+I would like to express my gratitude to my mentor, Akshat Gar, and ma cohort facilitator, Kay Welfare, for their invaluable guidiance and support. I also appreciate the honest feedback and direction provided by my classemate. 
+
 
 
 
