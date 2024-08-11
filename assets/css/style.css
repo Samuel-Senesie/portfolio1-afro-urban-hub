@@ -278,7 +278,7 @@ main {
 /* About Us Page */
 
 #about-us-cover {
-    height: 400px;
+    height: 250px;
     width: 100%;
     background: url('../images/about-us-cover.jpg') no-repeat center center/cover;
     position: relative;
@@ -316,7 +316,7 @@ main {
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 22vh;
+    height: 15vh;
     width: 100%;
 }
 
@@ -326,7 +326,7 @@ main {
     text-align: center;
     position: absolute;
     text-align: center;
-    bottom: 70px;
+    bottom: 50px;
     width: 100%;
     z-index: 1;
 }
@@ -342,6 +342,7 @@ main {
     font-family: 'Oswald', sans-serif;
     padding: 30px;
     text-decoration: none;
+    font-size: 120%;
 }
 
 #our-team {

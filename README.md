@@ -392,7 +392,55 @@ All errors and warnings from the W3C Validator were addressed. After applying th
 ![W3C CSS Validator - Validated](assets/readme-images/css-validation-pass-message.png)
 
 
-#### 
+### Lighthouse Testing
+
+After conducting a Lighthouse test via Chrome DevTools to assess Performance, Accessibility, Best Practice and SEO, several issues were identified across al pages. These issues primarilly affected Performance, Accessibility and Browser functionality, impacting overall site performance 
+
+#### Accessibility
+
+![Lighthouse Testing - Home Page](assets/readme-images/lighthouse-home-page.png)
+
+* **Error:** Touch targets, such as icons, didi not have sufficient size and spacing.
+* **Solution:** Resolved by removing the TikTok icon and Whatsapp number, and increasing the font size and spacing in the top bar to create space for the touchable elements.
+
+* **Error:** Some links did not have discernible names for screen readers.
+* **Solution:** Added `aria-label`attributes to the back-to-top and Whatsapp icons to provide clear labels.
+
+#### Browser Error
+* **Error:** Uncaught SyntaxError: "missing `)`, after argument list" at index.html240:13
+* **Solution:** Corrected by replacing the colon with a comma at line 240,  column 13. This fix was applied to all relevant pages.
+
+* **Error:** Insufficient contrast ratio between background and foreground colors.
+* **Solution:** Improved contrast by changng the background color from `#fff`to `rgb(225, 225, 225)`
+
+* **Error:** Failed to load resources with a 404 status; syntax error in `site.webmanifest`.
+* **Action:** This issue remains unresloved due to its complexity.
+
+#### Performance
+* **Problem:** Images were not properly sized, affecting performance.
+* **Solution:** The problem was addressed by removing, resizing and compressing icons, logo, and images using TinyPNG and ILoveIMG. While performance improved, the issue was not completely reloved. 
+
+## Technologies Used
+* **[GitPod Enterprise](https://www.gitpod.io/enterprise):** Used for writing HTML and CSS codes. HTML5 was used to strcture the content of the website, while CSS3 provided styling to enhance the user experience. 
+
+* **GitHub:** Used for hosting and deploying the website.
+
+* **GitBash:** Used to push new code to GitHub repository.
+
+* **WSC Validators:** [HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org) validators were used for code validation
+
+* **Chrome DevTools:** Used for performing Lighthouse testing.
+
+* **[Balsamiq](https://balsamiq.com):** Used to create the wireframes for the website.
+
+* [TinyPNG](https://tinypng.com) and [ILoveIMG](https://www.iloveimg.com/) tools were used for resizing and compressing images.
+
+* **ChatGPT:** Assisted with editing the text contents for the website and this README document.
+
+### A
+
+
+
 
 
 
